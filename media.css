@@ -1,0 +1,162 @@
+/* @media (min-width: 1200px) {
+  header,
+  main,
+  footer{
+    width: 100%;
+  }
+} */
+@media (max-width: 920px) {
+  header {
+    width: 100%;
+    position: absolute;
+  }
+  nav {
+    position: absolute;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    font-size: 40px;
+    display: none;
+  }
+  nav > ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 100%;
+    padding: 50px 40px;
+  }
+  header label {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 40px;
+  }
+  #burger:checked~label{
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+    border-radius: 50%;
+    animation: anim 2s linear infinite;
+  }
+  @keyframes anim {
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+  #burger:checked ~ nav {
+    left: 0;
+    display: flex;
+     
+  }
+
+  main {
+    width: 100%;
+    overflow: hidden;
+  }
+  #section1{
+    font-size: 20px;
+  }
+  #section2 > .slides {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #section2 > .slides > .slide {
+    width: 100%;
+    gap: 20px;
+  }
+  #section3 > .blocks {
+    flex-direction: column-reverse;
+  }
+  #section3 > .blocks .block {
+    width: 100%;
+  }
+  #section3 > .blocks > .block1 {
+    background: RGB(247, 245, 245);
+    padding: 50px;
+}
+  #section3 > .files {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  #section3 > .files .file {
+    width: 50%;
+  }
+  #section3 .file:not(:last-child)::after {
+    content: "";
+    display: none;
+  }
+  #section4 > .proects {
+    height: 320vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #section5 {
+    display: flex;
+    flex-direction: column;
+
+  }
+  #section5 .map {
+    width: 80vw;
+  }
+  #section5 .clients-log {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: auto;
+    padding: 0 50px;
+  }
+  .logos:nth-child(2n) {
+    place-self:end;
+  }
+  .logos:nth-child(5) {
+    grid-column: span 2;
+    grid-row: 2;
+    place-self: center;
+  }
+  #section5 .map {
+    width: 100vw;
+  }
+  #section5 .inform {
+    width: 100%;
+    flex-direction: column;
+  }
+  #section5 .clients .title,
+ #section5 .clients1 .title {
+  font-size: 50px;
+ }
+  #section5 .inform .info {
+    width: 90%;
+    margin: auto;
+  }
+  #section5 inp
+  footer {
+    width: 90%;
+    flex-direction: column;
+  }
+  footer > .end2 {
+    display: flex;
+    justify-content: start;
+  }
+}
+@media (max-width: 480px){
+  #section1{
+    font-size: 16px;
+  }
+  #section5 form input:last-child {
+    width: 100%;
+  }
+#section5{
+  gap: 30px;
+}
+#section5 iframe {
+  height: 500px;
+}
+}
